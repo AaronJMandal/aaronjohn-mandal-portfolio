@@ -1,5 +1,5 @@
 {
-  "name": "project-Portfolio",
+  "name": "aaron-mandal-portfolio",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -18,8 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start-mac": "PORT=3004 react-scripts start",
-    "start-windows": "set PORT=3004 && react-scripts start"
+    "build": "react-scripts build"
   },
   "browserslist": {
     "production": [

@@ -4,47 +4,49 @@ import { GitHubIcon, LinkedInIcon } from "./ProjectIcons";
 
 const HeroSection = () => {
   return (
-    <Container>
-      <>
-        <ProfilePicture src={profileImage} />
-        <h1>Aaron John Mandal</h1>
-        <StyledParagraph>
-          Hello, I am Aaron! I am a web developer student. Please feel free to
-          reach out if you are interested to work with me!
-        </StyledParagraph>
-        <div>
-          <IconLinks href="#">
-            <GitHubIcon />
-          </IconLinks>
-          <IconLinks href="#">
-            <LinkedInIcon />
-          </IconLinks>
-        </div>
-        <TechSkill>
-          <h2>Coding Skills</h2>
-          <i
-            class="fa-brands fa-html5 fa-3x"
-            aria-label="HTML"
-            title="HTML"
-          ></i>
-          <i
-            class="fa-brands fa-css3-alt fa-3x"
-            aria-label="CSS"
-            title="CSS"
-          ></i>
-          <i
-            class="fa-brands fa-js fa-3x"
-            aria-label="Javascript"
-            title="Javascript"
-          ></i>
-          <i
-            class="fa-brands fa-react fa-3x"
-            aria-label="React"
-            title="React"
-          ></i>
-        </TechSkill>
-      </>
-    </Container>
+    <div className="page-component">
+      <Container>
+        <>
+          <ProfilePicture src={profileImage} />
+          <h1>Aaron John Mandal</h1>
+          <StyledParagraph>
+            Hello, I am Aaron! I am a web developer student. Please feel free to
+            reach out if you are interested to work with me!
+          </StyledParagraph>
+          <div>
+            <IconLinks href="#">
+              <GitHubIcon />
+            </IconLinks>
+            <IconLinks href="#">
+              <LinkedInIcon />
+            </IconLinks>
+          </div>
+          <TechSkill>
+            <h2>Coding Skills</h2>
+            <i
+              class="fa-brands fa-html5 fa-3x"
+              aria-label="HTML"
+              title="HTML"
+            ></i>
+            <i
+              class="fa-brands fa-css3-alt fa-3x"
+              aria-label="CSS"
+              title="CSS"
+            ></i>
+            <i
+              class="fa-brands fa-js fa-3x"
+              aria-label="Javascript"
+              title="Javascript"
+            ></i>
+            <i
+              class="fa-brands fa-react fa-3x"
+              aria-label="React"
+              title="React"
+            ></i>
+          </TechSkill>
+        </>
+      </Container>
+    </div>
   );
 };
 
@@ -53,6 +55,7 @@ export default HeroSection;
 const StyledParagraph = styled.div`
   font-size: 15px;
   max-width: 40ch;
+  letter-spacing: 2px;
 `;
 
 const Container = styled.div`
@@ -61,7 +64,7 @@ const Container = styled.div`
   align-items: center;
   text-align: center;
   justify-content: center;
-  margin-top: 10%;
+  margin-top: 6%;
 `;
 
 const ProfilePicture = styled.img`
